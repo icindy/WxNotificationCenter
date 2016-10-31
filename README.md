@@ -12,15 +12,15 @@ WxNotificationCenter - 微信小程序通知广播模式类,降低小程序之�
 
 ## 使用
 
-* 1. copy 文件 `WxNotificationCenter.js` 到你的开发目录中
+ 1. copy 文件 `WxNotificationCenter.js` 到你的开发目录中
 
-* 2. 引入 `WxNotificationCenter.js` 在你需要的`js`中
+ 2. 引入 `WxNotificationCenter.js` 在你需要的`js`中
 
   ```
   var WxNotificationCenter = require("../../WxNotificationCenter/WxNotificationCenter.js");
   ```
 
-* 3. 注册通知
+ 3. 注册通知
 
   ```
   // 最好在onLoad中进行
@@ -38,13 +38,13 @@ WxNotificationCenter - 微信小程序通知广播模式类,降低小程序之�
   WxNotificationCenter.addNotification("testNotificationName",that.testNotificationFn,that)
   ```
 
-* 4. 发送通知
+ 4. 发送通知
 
   ```
   WxNotificationCenter.postNotificationName("testNotificationName");
   ```
 
-* 5. 移除通知
+ 5. 移除通知
 
   ```
   // 移除通知在本也完成

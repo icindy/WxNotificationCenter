@@ -1,3 +1,13 @@
+/**
+ * author: Di (微信小程序开发工程师)
+ * organization: WeAppDev(微信小程序开发论坛)(http://weappdev.com)
+ *               垂直微信小程序开发交流社区
+ * 
+ * github地址: https://github.com/icindy/WxNotificationCenter
+ * 
+ * for: 微信小程序通知广播模式类,降低小程序之间的耦合度
+ * detail : http://weappdev.com/t/wxnotificationcenter/233
+ */
 //index.js
 //获取应用实例
 var WxNotificationCenter = require("../../WxNotificationCenter/WxNotificationCenter.js");

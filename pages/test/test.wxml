@@ -1,0 +1,14 @@
+
+
+
+
+
+<view class="container" style="text-align: center;">
+    <view style="text-align: center;">{{text}}</view>
+    <view style="text-align: center;">{{removeInfo}}</view>
+</view>
+
+<view class="btnContainer">
+    <button bindtap="removeNotice" type="warn">移除通知</button>
+    <button bindtap="addNotice">再次添加通知</button>
+</view>

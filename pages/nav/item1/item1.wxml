@@ -1,0 +1,11 @@
+<!--index.wxml-->
+
+<view class="container" style="text-align: center;">
+    <view>这是第一个页面itme1，在这里可以发送通知改变root跟页面</view>
+    <view class="info">{{info}}</view>
+</view>
+<view class="btnContainer" style="padding: 0 20px;">
+    <button bindtap="postNotice">点击发送通知</button>
+    <button bindtap="goItem2">下一页</button>
+</view>
+

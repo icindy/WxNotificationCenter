@@ -1,0 +1,14 @@
+<!--index.wxml-->
+
+<view class="container" style="text-align: center;">
+    <text>{{noticeText}}</text>
+</view>
+
+<view class="btnContainer">
+    <button bindtap="postNotice">点击发送通知</button>
+    <button bindtap="goItem1">下一页</button>
+</view>
+<view class="btnContainer" style="margin-top: 50px;text-align: center;">
+    <view class="info"> 如果tabbar其它页面激活过，也可以接受通知<view>
+    <button bindtap="postTabNotice">点击修改tabbar页面文字</button>
+</view>

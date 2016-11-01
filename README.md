@@ -10,6 +10,10 @@ WxNotificationCenter - 微信小程序通知广播模式类,降低小程序开�
 
 `version 0.1`
 
+## 效果预览
+
+![WxNotificationCenter效果预览gif](screenshoot/wxnotice.gif)
+
 ## 使用
 
  1. copy 文件 `WxNotificationCenter.js` 到你的开发目录中

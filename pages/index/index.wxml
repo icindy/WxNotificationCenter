@@ -9,6 +9,6 @@
     <button bindtap="goItem1">下一页</button>
 </view>
 <view class="btnContainer" style="margin-top: 50px;text-align: center;">
-    <view class="info"> 如果tabbar其它页面激活过，也可以接受通知<view>
+    <view class="info"> 如果tabbar其它页面激活过，也可以接受通知</view>
     <button bindtap="postTabNotice">点击修改tabbar页面文字</button>
 </view>

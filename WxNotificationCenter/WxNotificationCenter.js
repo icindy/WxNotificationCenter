@@ -39,6 +39,28 @@ function addNotification(name, selector, observer) {
     }
 }
 
+/**
+ * 仅添加一次监听
+ * 
+ * 参数:
+ * name： 注册名，一般let在公共类中
+ * selector： 对应的通知方法，接受到通知后进行的动作
+ * observer: 注册对象，指Page对象
+ */
+function addOnceNotification(name, selector, observer) {
+    if (__notices.length > 0) {
+        for (var i = 0; i < __notices.length; i++) {
+            var notice = __notices[i];
+            if (notice.name === name) {
+                if (notice.observer === observer) {
+                    return;
+                }
+            }
+        }
+        this.addNotification(name, selector, observer)
+    }
+}
+
 function addNotices(newNotice) {
     // if (__notices.length > 0) {
     //     for (var i = 0; i < __notices.length; i++) {
@@ -165,5 +187,6 @@ function cmp(x, y) {
 module.exports = {
     addNotification: addNotification,
     removeNotification: removeNotification,
-    postNotificationName: postNotificationName
+    postNotificationName: postNotificationName,
+    addOnceNotification: addOnceNotification
 }

@@ -46,19 +46,18 @@ function addNotification(name, selector, observer) {
  * name： 注册名，一般let在公共类中
  * selector： 对应的通知方法，接受到通知后进行的动作
  * observer: 注册对象，指Page对象
+ * 备注： 不同监听使用不同的name
  */
 function addOnceNotification(name, selector, observer) {
     if (__notices.length > 0) {
         for (var i = 0; i < __notices.length; i++) {
             var notice = __notices[i];
             if (notice.name === name) {
-                if (notice.observer === observer) {
-                    return;
-                }
+                return;
             }
         }
-        this.addNotification(name, selector, observer)
     }
+    this.addNotification(name, selector, observer)
 }
 
 function addNotices(newNotice) {

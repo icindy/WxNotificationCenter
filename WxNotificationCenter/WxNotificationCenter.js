@@ -57,8 +57,8 @@ function addOnceNotification(name, selector, observer) {
                 }
             }
         }
-        this.addNotification(name, selector, observer)
     }
+	this.addNotification(name, selector, observer)
 }
 
 function addNotices(newNotice) {

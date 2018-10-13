@@ -126,7 +126,7 @@ function postNotificationName(name, info) {
     for (var i = 0; i < __notices.length; i++){
       var notice = __notices[i];
       if(notice.name === name){
-        notice.selector(info);
+        notice.selector.call(notice.observer, info);
       }
     }
     
